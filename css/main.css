@@ -35,6 +35,12 @@
 
 .elementor-location-popup .elementor-nav-menu--dropdown .elementor-item:focus {
   background-color: transparent;
+  border: none;
+}
+
+.elementor-157 .elementor-element.elementor-element-ea706bd > .elementor-widget-container {
+  display: flex;
+  align-items: center;
 }
 
 /* Box sizing rules */
@@ -145,6 +151,7 @@ body, html {
 h1 {
   background: -webkit-linear-gradient(var(--blue), var(--green));
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 

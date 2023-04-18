@@ -13,7 +13,7 @@
 
 .elementor-image-carousel-wrapper .swiper-slide img {
   width: 100%;
-  height:auto;
+  height: auto;
 }
 
 /*************************************************************
@@ -31,5 +31,10 @@
 
 .elementor-location-popup .elementor-nav-menu--dropdown .elementor-item:focus {
   background-color: transparent;
+  border: none;
 }
 
+.elementor-157 .elementor-element.elementor-element-ea706bd > .elementor-widget-container {
+  display: flex;
+  align-items: center;
+}

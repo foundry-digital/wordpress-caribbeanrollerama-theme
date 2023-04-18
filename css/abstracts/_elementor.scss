@@ -38,3 +38,11 @@
   display: flex !important;
   align-items: center !important;
 }
+
+/*************************************************************
+** PARAGRAPH STYLES
+*************************************************************/
+
+.elementor-widget-text-editor p:last-of-type {
+  margin-bottom: 0;
+}

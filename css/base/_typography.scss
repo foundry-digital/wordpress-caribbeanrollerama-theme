@@ -1,0 +1,9 @@
+/*************************************************************
+** CUSTOM FONT STYLES
+*************************************************************/
+
+h1 {
+  background: -webkit-linear-gradient(var(--blue), var(--green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

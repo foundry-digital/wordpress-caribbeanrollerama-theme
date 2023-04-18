@@ -1,0 +1,35 @@
+/*************************************************************
+** ACCORDION WIDGET
+*************************************************************/
+
+.elementor-accordion-item {
+  border-left: none !important;
+  border-right: none !important;
+}
+
+/*************************************************************
+** IMAGE SLIDER WIDGET
+*************************************************************/
+
+.elementor-image-carousel-wrapper .swiper-slide img {
+  width: 100%;
+  height:auto;
+}
+
+/*************************************************************
+** CUSTOM MENU STYLES
+*************************************************************/
+
+.elementor-location-popup .elementor-nav-menu .sub-arrow {
+  right: 10px;
+  position: absolute;
+  path {
+    color: #fff;
+    fill: #fff;
+  }
+}
+
+.elementor-location-popup .elementor-nav-menu--dropdown .elementor-item:focus {
+  background-color: transparent;
+}
+

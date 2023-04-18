@@ -1,0 +1,35 @@
+/*************************************************************
+** HOME PAGE BANNER
+*************************************************************/
+
+.home .elementor-background-slideshow:after {
+  content: '';
+  display:block;
+  position:absolute;
+  inset:0 0 0 0;
+  height:100%;
+  width:100%;
+  background-color: var(--pink);
+  opacity: .7;
+  z-index:2;
+  transform: skew(0deg, 10deg) translateY(40%);
+  @media only screen and (min-width: $tablet-breakpoint) {
+    opacity: .4;
+    transform: skew(-10deg, 0deg) translateX(-20%);
+  } 
+  @media only screen and (min-width: $desktop-breakpoint) {
+    transform: skew(-10deg, 0deg) translateX(-40%);
+  } 
+}
+
+@media only screen and (max-width: ($tablet-breakpoint - 1)) {
+  .home .elementor-background-slideshow:before {
+    background-image: linear-gradient(0deg, var(--dark-blue) 50%, #08032a39 100%) !important;
+    opacity:1;
+  }
+  .home .elementor-background-slideshow .elementor-background-slideshow__slide__image {
+    background-size: 120% !important;
+    background-repeat: no-repeat !important;
+    background-position: top center !important;
+  }
+}

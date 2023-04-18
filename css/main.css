@@ -1,0 +1,188 @@
+:root {
+  --green: #B2EAA2;
+  --blue: #46BCE6;
+  --dark-blue: #08032A;
+  --pink: #FF0FAD;
+}
+
+/*************************************************************
+** ACCORDION WIDGET
+*************************************************************/
+.elementor-accordion-item {
+  border-left: none !important;
+  border-right: none !important;
+}
+
+/*************************************************************
+** IMAGE SLIDER WIDGET
+*************************************************************/
+.elementor-image-carousel-wrapper .swiper-slide img {
+  width: 100%;
+  height: auto;
+}
+
+/*************************************************************
+** CUSTOM MENU STYLES
+*************************************************************/
+.elementor-location-popup .elementor-nav-menu .sub-arrow {
+  right: 10px;
+  position: absolute;
+}
+.elementor-location-popup .elementor-nav-menu .sub-arrow path {
+  color: #fff;
+  fill: #fff;
+}
+
+.elementor-location-popup .elementor-nav-menu--dropdown .elementor-item:focus {
+  background-color: transparent;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body, html {
+  font-family: "Avenir Next";
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  font-size: 13px;
+}
+@media only screen and (min-width: 1024px) {
+  body, html {
+    font-size: 15px;
+  }
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media only screen and (min-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+.page-header {
+  display: none;
+}
+
+/*************************************************************
+** CUSTOM FONT STYLES
+*************************************************************/
+h1 {
+  background: -webkit-linear-gradient(var(--blue), var(--green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*************************************************************
+** HOME PAGE BANNER
+*************************************************************/
+.home .elementor-background-slideshow:after {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0 0 0 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--pink);
+  opacity: 0.7;
+  z-index: 2;
+  transform: skew(0deg, 10deg) translateY(40%);
+}
+@media only screen and (min-width: 768px) {
+  .home .elementor-background-slideshow:after {
+    opacity: 0.4;
+    transform: skew(-10deg, 0deg) translateX(-20%);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .home .elementor-background-slideshow:after {
+    transform: skew(-10deg, 0deg) translateX(-40%);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .home .elementor-background-slideshow:before {
+    background-image: linear-gradient(0deg, var(--dark-blue) 50%, rgba(8, 3, 42, 0.2235294118) 100%) !important;
+    opacity: 1;
+  }
+  .home .elementor-background-slideshow .elementor-background-slideshow__slide__image {
+    background-size: 120% !important;
+    background-repeat: no-repeat !important;
+    background-position: top center !important;
+  }
+}/*# sourceMappingURL=main.css.map */

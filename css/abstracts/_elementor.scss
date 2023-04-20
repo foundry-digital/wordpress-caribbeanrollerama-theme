@@ -46,3 +46,14 @@
 .elementor-widget-text-editor p:last-of-type {
   margin-bottom: 0;
 }
+
+/*************************************************************
+** ELEMENTOR POST STYLES
+*************************************************************/
+
+.elementor-post__thumbnail {
+    margin-top: -20px;
+}
+.elementor-post__card {
+  padding-bottom: 0 !important;
+}

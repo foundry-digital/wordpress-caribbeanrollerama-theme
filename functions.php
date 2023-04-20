@@ -19,7 +19,7 @@ function hello_elementor_child_enqueue_scripts()
   wp_dequeue_style('hello-elementor');
   wp_deregister_style('hello-elementor');
 
-  wp_enqueue_style('foundry-styles', get_stylesheet_directory_uri() . '/css/main.css', array());
+  wp_enqueue_style('foundry-styles', get_stylesheet_directory_uri() . '/css/main.css', array(), '1.0.0');
 
   wp_enqueue_script('font-awesome', 'https://kit.fontawesome.com/e72a146c5f.js');
   wp_script_add_data('font-awesome', array('crossorigin'), array('anonymous'));

@@ -50,6 +50,17 @@
   margin-bottom: 0;
 }
 
+/*************************************************************
+** ELEMENTOR POST STYLES
+*************************************************************/
+.elementor-post__thumbnail {
+  margin-top: -20px;
+}
+
+.elementor-post__card {
+  padding-bottom: 0 !important;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -155,7 +166,7 @@ body, html {
 /*************************************************************
 ** CUSTOM FONT STYLES
 *************************************************************/
-h1 {
+h1, h2 {
   background: -webkit-linear-gradient(var(--blue), var(--green));
   -webkit-background-clip: text;
           background-clip: text;

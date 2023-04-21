@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const currentCategory = new URL(window.location.href).searchParams.get('category');
 
   categoryInput.forEach((select) => {
-    currentCategory ? select.value = currentCategory : select.selectedIndex = 0;
+    currentCategory ? (select.value = currentCategory) : (select.selectedIndex = 0);
     select.addEventListener('change', function () {
       const category = select.value;
       if (category) {
@@ -49,4 +49,12 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+});
+
+jQuery(document).ready(function ($) {
+  var delay = 100;
+  setTimeout(function () {
+    $('.elementor-tab-title').removeClass('elementor-active');
+    $('.elementor-tab-content').css('display', 'none');
+  }, delay);
 });

@@ -61,6 +61,13 @@
   padding-bottom: 0 !important;
 }
 
+/*************************************************************
+** ELEMENTOR BUTTON STYLES
+*************************************************************/
+.elementor-button {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.368627451);
+}
+
 /* Box sizing rules */
 *,
 *::before,
